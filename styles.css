@@ -1,10 +1,10 @@
 :root {
-  --bg: #070707;
-  --surface: #111111;
-  --text: #f3e7bf;
-  --muted: #c6b581;
-  --line: #3a3017;
-  --accent: #d4af37;
+  --bg: #030303;
+  --surface: #080808;
+  --text: #f6edc8;
+  --muted: #c5b27a;
+  --line: #4b3a10;
+  --accent: #d8b13f;
 }
 
 *,
@@ -22,13 +22,14 @@ body {
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.6;
 }
 
 .container {
-  width: min(920px, 92vw);
-  margin: 3rem auto;
+  width: min(980px, calc(100vw - 10px));
+  margin: 0 auto;
+  padding: 6px 0 16px;
 }
 
 .meta {
@@ -53,9 +54,9 @@ h2 {
 .panel {
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 1.1rem 1.2rem;
-  margin-bottom: 1rem;
+  border-radius: 11px;
+  padding: 1rem 1.2rem 1.15rem;
+  margin-bottom: 0.95rem;
 }
 
 .toc-panel {
@@ -80,6 +81,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   border: 1px solid var(--line);
+  font-size: 1.02rem;
 }
 
 th,
@@ -87,7 +89,7 @@ td {
   border-bottom: 1px solid var(--line);
   border-right: 1px solid var(--line);
   text-align: left;
-  padding: 0.55rem 0.65rem;
+  padding: 0.65rem 0.65rem;
   vertical-align: top;
 }
 
@@ -101,7 +103,7 @@ tr:last-child td {
 }
 
 th {
-  background: #171307;
+  background: #0e0b02;
   font-weight: 700;
 }
 
@@ -111,6 +113,51 @@ a {
 
 a:hover {
   color: #f2d06b;
+}
+
+.projects-table th:nth-child(1),
+.projects-table td:nth-child(1) {
+  width: 52%;
+}
+
+.projects-table th:nth-child(2),
+.projects-table td:nth-child(2) {
+  width: 12%;
+}
+
+.projects-table th:nth-child(3),
+.projects-table td:nth-child(3) {
+  width: 10%;
+}
+
+.projects-table th:nth-child(4),
+.projects-table td:nth-child(4) {
+  width: 14%;
+}
+
+.projects-table th:nth-child(5),
+.projects-table td:nth-child(5) {
+  width: 12%;
+}
+
+.certifications-table th:nth-child(1),
+.certifications-table td:nth-child(1) {
+  width: 60%;
+}
+
+.certifications-table th:nth-child(2),
+.certifications-table td:nth-child(2) {
+  width: 12%;
+}
+
+.certifications-table th:nth-child(3),
+.certifications-table td:nth-child(3) {
+  width: 18%;
+}
+
+.certifications-table th:nth-child(4),
+.certifications-table td:nth-child(4) {
+  width: 10%;
 }
 
 @media (max-width: 640px) {
